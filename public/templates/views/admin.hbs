@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</head>
+{{>header}}
+
+<body>
+    <div id="login" class="container">
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="login well well-small">
+                    <div class="center" style="text-align: center;">
+                        <h1>Admin</h1>
+                    </div>
+                    <form action="/admin" class="login-form" style="align-items: center; text-align: center;"
+                        id="UserLoginForm" method="post" accept-charset="utf-8">
+                        <div class="control-group">
+                            <div class="input-prepend">
+                                <span class="add-on"><i class="icon-user"></i></span>
+                                <input name="name" required="required" placeholder="Name" maxlength="255" type="text"
+                                    id="name">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="input-prepend">
+                                <span class="add-on"><i class="icon-lock"></i></span>
+                                <input name="number" type="number" required="required" placeholder="Contact"
+                                    type="password" id="UserPassword">
+                            </div>
+                        </div>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://th.bing.com/th/id/R.5ac388ecac327dc5d74db5972c32bdbd?rik=3J1QhqMzQ4xpmg&riu=http%3a%2f%2frecb.ac.in%2fimg%2fb6.jpg&ehk=n%2f7pHhXwncYhaZ%2fEfhJvdiQZ8%2f5Pd72eo7v0Oav1Kzk%3d&risl=&pid=ImgRaw&r=0"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://th.bing.com/th/id/R.57e0502ea5b23546553b61034ca18394?rik=D5qmRQw3nBPhYQ&riu=http%3a%2f%2frecb.ac.in%2fimg%2fb2.jpg&ehk=%2bmW0pXqsyvECduw29SlQe5PYnplo4dYoZbKkoyey4LM%3d&risl=&pid=ImgRaw&r=0"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://th.bing.com/th/id/R.775f5f29f563abc49ef919dd969183e4?rik=iVQJy%2bvP4HGoQg&riu=http%3a%2f%2frecb.ac.in%2fimg%2fb1.jpg&ehk=s6KSG7rcIv3986OxSuENUBxjWogyI3eKpE%2bdBds15UQ%3d&risl=&pid=ImgRaw&r=0"
+                        class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
